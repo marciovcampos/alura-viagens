@@ -24,6 +24,7 @@
 		808C7EFD24A632B1001E6F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808C7F0024A632B1001E6F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808C7F0224A632B1001E6F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808C7F0824A633C9001E6F75 /* Alura Viagens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Alura Viagens.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		808C7EF324A632AD001E6F75 /* Alura Viagens */ = {
 			isa = PBXGroup;
 			children = (
+				808C7F0824A633C9001E6F75 /* Alura Viagens.entitlements */,
 				808C7EF424A632AD001E6F75 /* AppDelegate.swift */,
 				808C7EF624A632AD001E6F75 /* SceneDelegate.swift */,
 				808C7EF824A632AD001E6F75 /* ViewController.swift */,
@@ -284,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Alura Viagens/Alura Viagens.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Alura Viagens/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +295,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.marciovcampos.Alura-Viagens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Alura Viagens/Alura Viagens.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Alura Viagens/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.marciovcampos.Alura-Viagens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
