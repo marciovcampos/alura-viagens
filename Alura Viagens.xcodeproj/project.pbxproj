@@ -13,6 +13,8 @@
 		808C7EFC24A632AD001E6F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808C7EFA24A632AD001E6F75 /* Main.storyboard */; };
 		808C7EFE24A632B1001E6F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808C7EFD24A632B1001E6F75 /* Assets.xcassets */; };
 		808C7F0124A632B1001E6F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808C7EFF24A632B1001E6F75 /* LaunchScreen.storyboard */; };
+		808C7F0A24A6A555001E6F75 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C7F0924A6A555001E6F75 /* Viagem.swift */; };
+		808C7F0C24A6A6FE001E6F75 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C7F0B24A6A6FE001E6F75 /* ViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		808C7F0024A632B1001E6F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808C7F0224A632B1001E6F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808C7F0824A633C9001E6F75 /* Alura Viagens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Alura Viagens.entitlements"; sourceTree = "<group>"; };
+		808C7F0924A6A555001E6F75 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		808C7F0B24A6A6FE001E6F75 /* ViagemDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				808C7EF424A632AD001E6F75 /* AppDelegate.swift */,
 				808C7EF624A632AD001E6F75 /* SceneDelegate.swift */,
 				808C7EF824A632AD001E6F75 /* ViewController.swift */,
+				808C7F0924A6A555001E6F75 /* Viagem.swift */,
+				808C7F0B24A6A6FE001E6F75 /* ViagemDAO.swift */,
 				808C7EFA24A632AD001E6F75 /* Main.storyboard */,
 				808C7EFD24A632B1001E6F75 /* Assets.xcassets */,
 				808C7EFF24A632B1001E6F75 /* LaunchScreen.storyboard */,
@@ -140,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808C7F0A24A6A555001E6F75 /* Viagem.swift in Sources */,
+				808C7F0C24A6A6FE001E6F75 /* ViagemDAO.swift in Sources */,
 				808C7EF924A632AD001E6F75 /* ViewController.swift in Sources */,
 				808C7EF524A632AD001E6F75 /* AppDelegate.swift in Sources */,
 				808C7EF724A632AD001E6F75 /* SceneDelegate.swift in Sources */,
