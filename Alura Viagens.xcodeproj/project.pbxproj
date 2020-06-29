@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8076808924AA28B1009BC1CD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8076808824AA28B1009BC1CD /* TableViewCell.swift */; };
 		808C7EF524A632AD001E6F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C7EF424A632AD001E6F75 /* AppDelegate.swift */; };
 		808C7EF724A632AD001E6F75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C7EF624A632AD001E6F75 /* SceneDelegate.swift */; };
 		808C7EF924A632AD001E6F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C7EF824A632AD001E6F75 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8076808824AA28B1009BC1CD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		808C7EF124A632AD001E6F75 /* Alura Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alura Viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808C7EF424A632AD001E6F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808C7EF624A632AD001E6F75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				808C7EF424A632AD001E6F75 /* AppDelegate.swift */,
 				808C7EF624A632AD001E6F75 /* SceneDelegate.swift */,
 				808C7EF824A632AD001E6F75 /* ViewController.swift */,
+				8076808824AA28B1009BC1CD /* TableViewCell.swift */,
 				808C7F0924A6A555001E6F75 /* Viagem.swift */,
 				808C7F0B24A6A6FE001E6F75 /* ViagemDAO.swift */,
 				808C7EFA24A632AD001E6F75 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 				808C7F0A24A6A555001E6F75 /* Viagem.swift in Sources */,
 				808C7F0C24A6A6FE001E6F75 /* ViagemDAO.swift in Sources */,
 				808C7EF924A632AD001E6F75 /* ViewController.swift in Sources */,
+				8076808924AA28B1009BC1CD /* TableViewCell.swift in Sources */,
 				808C7EF524A632AD001E6F75 /* AppDelegate.swift in Sources */,
 				808C7EF724A632AD001E6F75 /* SceneDelegate.swift in Sources */,
 			);
