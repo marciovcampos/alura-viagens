@@ -37,6 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.labelTitulo.text = viagemAtual.titulo
         cell.labelQuantidadeDias.text = "\(viagemAtual.quantidadeDeDias) dias"
         cell.labelPreco.text = viagemAtual.preco
+        cell.imagemViagem.image = UIImage(named: viagemAtual.caminhoDaImagem)
         
         return cell
       }
