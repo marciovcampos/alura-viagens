@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,87 +12,118 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alura_Viagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmR-Ja-Wbl" userLabel="View Header">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESPECIAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6S-zH-seb">
-                                        <rect key="frame" x="31" y="53" width="90" height="28"/>
+                                        <rect key="frame" x="31" y="53" width="89.5" height="27.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h54-PU-mwP">
-                                        <rect key="frame" x="104" y="26" width="112" height="25"/>
+                                        <rect key="frame" x="131.5" y="26" width="112" height="25"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BRASIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irp-5V-5rV">
-                                        <rect key="frame" x="31" y="76" width="104" height="32"/>
+                                        <rect key="frame" x="31" y="122" width="142" height="32"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="145" id="4Aq-Of-a09"/>
-                                    <constraint firstItem="irp-5V-5rV" firstAttribute="top" secondItem="h54-PU-mwP" secondAttribute="bottom" constant="25" id="C06-bO-P53"/>
+                                    <constraint firstAttribute="height" constant="145" id="4Aq-Of-a09">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                    </constraint>
+                                    <constraint firstItem="irp-5V-5rV" firstAttribute="top" secondItem="h54-PU-mwP" secondAttribute="bottom" constant="25" id="C06-bO-P53">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
                                     <constraint firstItem="h54-PU-mwP" firstAttribute="centerX" secondItem="EmR-Ja-Wbl" secondAttribute="centerX" id="C78-cP-0Wd"/>
                                     <constraint firstItem="X6S-zH-seb" firstAttribute="leading" secondItem="EmR-Ja-Wbl" secondAttribute="leading" constant="31" id="NOp-4p-wRi"/>
                                     <constraint firstItem="irp-5V-5rV" firstAttribute="leading" secondItem="EmR-Ja-Wbl" secondAttribute="leading" constant="31" id="fin-7E-X3s"/>
-                                    <constraint firstItem="X6S-zH-seb" firstAttribute="top" secondItem="h54-PU-mwP" secondAttribute="bottom" constant="2" id="u4o-94-uG5"/>
+                                    <constraint firstItem="X6S-zH-seb" firstAttribute="top" secondItem="h54-PU-mwP" secondAttribute="bottom" constant="2" id="u4o-94-uG5">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                                    </constraint>
                                     <constraint firstItem="h54-PU-mwP" firstAttribute="top" secondItem="EmR-Ja-Wbl" secondAttribute="top" constant="26" id="x0Z-JS-xTj"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrS-t2-RXu" userLabel="View Button Hoteis">
                                 <rect key="frame" x="28" y="123" width="100" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkg-hX-4Cv">
-                                        <rect key="frame" x="0.0" y="10" width="100" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkg-hX-4Cv">
+                                        <rect key="frame" x="26.5" y="7" width="47" height="36"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="hotéis">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        </variation>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="8ej-9w-hRI"/>
-                                    <constraint firstAttribute="height" constant="50" id="vJo-Mx-7wC"/>
+                                    <constraint firstAttribute="width" constant="100" id="8ej-9w-hRI">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstItem="zkg-hX-4Cv" firstAttribute="centerY" secondItem="xrS-t2-RXu" secondAttribute="centerY" id="HbQ-lf-Xpp"/>
+                                    <constraint firstItem="zkg-hX-4Cv" firstAttribute="centerX" secondItem="xrS-t2-RXu" secondAttribute="centerX" id="SnS-vx-BUJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="vJo-Mx-7wC">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yex-SQ-apT" userLabel="View Button Pacotes">
-                                <rect key="frame" x="192" y="123" width="100" height="50"/>
+                                <rect key="frame" x="247" y="123" width="100" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1J-0A-ixu">
-                                        <rect key="frame" x="0.0" y="10" width="100" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1J-0A-ixu">
+                                        <rect key="frame" x="19.5" y="7" width="61" height="36"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="pacotes">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        </variation>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3wh-CE-5Ml"/>
-                                    <constraint firstAttribute="width" constant="100" id="DCS-N3-Gc5"/>
+                                    <constraint firstItem="f1J-0A-ixu" firstAttribute="centerX" secondItem="Yex-SQ-apT" secondAttribute="centerX" id="O3a-Lp-pnB"/>
+                                    <constraint firstItem="f1J-0A-ixu" firstAttribute="centerY" secondItem="Yex-SQ-apT" secondAttribute="centerY" id="lEZ-Ho-3cb"/>
+                                    <constraint firstAttribute="width" constant="100" id="rcj-Af-EMs">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="50" id="uIk-I5-PjB">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="175" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zbg-zs-nSD">
-                                <rect key="frame" x="0.0" y="188" width="320" height="380"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zbg-zs-nSD">
+                                <rect key="frame" x="0.0" y="188" width="375" height="479"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="crI-g7-urp" customClass="TableViewCell" customModule="Alura_Viagens" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="175"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="258" id="crI-g7-urp" customClass="TableViewCell" customModule="Alura_Viagens" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="258"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="crI-g7-urp" id="wCY-YE-E9x">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantidade de Dias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKI-MS-7OI">
@@ -103,6 +134,9 @@
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2Y-ei-9I9">
                                                     <rect key="frame" x="15" y="3" width="43" height="21"/>
@@ -112,15 +146,20 @@
                                                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="28"/>
+                                                    </variation>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obZ-e1-dGh">
-                                                    <rect key="frame" x="14" y="25.5" width="292" height="125"/>
+                                                    <rect key="frame" x="14" y="25.5" width="347" height="125"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="125" id="746-xs-Fct"/>
+                                                        <constraint firstAttribute="height" constant="125" id="746-xs-Fct">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="190"/>
+                                                        </constraint>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uht-6h-Dym">
-                                                    <rect key="frame" x="268" y="152" width="37" height="22"/>
+                                                    <rect key="frame" x="323" y="152" width="37" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="7fE-Rr-D3X"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Akh-if-Svm"/>
@@ -128,6 +167,9 @@
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                     <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -160,16 +202,24 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xrS-t2-RXu" firstAttribute="top" secondItem="8Zk-Xc-Bhr" secondAttribute="top" constant="123" id="16b-Lg-3Eg"/>
-                            <constraint firstItem="xrS-t2-RXu" firstAttribute="leading" secondItem="8Zk-Xc-Bhr" secondAttribute="leading" constant="28" id="1cs-Oq-wt5"/>
-                            <constraint firstItem="8Zk-Xc-Bhr" firstAttribute="trailing" secondItem="Yex-SQ-apT" secondAttribute="trailing" constant="28" id="Mle-3e-Xow"/>
+                            <constraint firstItem="xrS-t2-RXu" firstAttribute="top" secondItem="8Zk-Xc-Bhr" secondAttribute="top" constant="123" id="16b-Lg-3Eg">
+                                <variation key="heightClass=regular-widthClass=regular" constant="210"/>
+                            </constraint>
+                            <constraint firstItem="xrS-t2-RXu" firstAttribute="leading" secondItem="8Zk-Xc-Bhr" secondAttribute="leading" constant="28" id="1cs-Oq-wt5">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="EmR-Ja-Wbl" firstAttribute="leading" secondItem="8Zk-Xc-Bhr" secondAttribute="leading" id="Rb0-YZ-vcB"/>
                             <constraint firstItem="EmR-Ja-Wbl" firstAttribute="trailing" secondItem="8Zk-Xc-Bhr" secondAttribute="trailing" id="WB6-wb-1QQ"/>
                             <constraint firstItem="Zbg-zs-nSD" firstAttribute="bottom" secondItem="8Zk-Xc-Bhr" secondAttribute="bottom" id="Xlz-V9-acA"/>
                             <constraint firstItem="Zbg-zs-nSD" firstAttribute="leading" secondItem="8Zk-Xc-Bhr" secondAttribute="leading" id="dQb-qs-0md"/>
                             <constraint firstItem="Zbg-zs-nSD" firstAttribute="top" secondItem="xrS-t2-RXu" secondAttribute="bottom" constant="15" id="ftB-S6-wvI"/>
                             <constraint firstItem="EmR-Ja-Wbl" firstAttribute="top" secondItem="8Zk-Xc-Bhr" secondAttribute="top" id="h9g-5P-ZWp"/>
-                            <constraint firstItem="Yex-SQ-apT" firstAttribute="top" secondItem="EmR-Ja-Wbl" secondAttribute="bottom" constant="-22" id="nb1-fg-6TX"/>
+                            <constraint firstItem="8Zk-Xc-Bhr" firstAttribute="trailing" secondItem="Yex-SQ-apT" secondAttribute="trailing" constant="28" id="oVg-YB-5Sw">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="Yex-SQ-apT" firstAttribute="top" secondItem="8Zk-Xc-Bhr" secondAttribute="top" constant="123" id="q1y-Rn-GfI">
+                                <variation key="heightClass=regular-widthClass=regular" constant="210"/>
+                            </constraint>
                             <constraint firstItem="Zbg-zs-nSD" firstAttribute="trailing" secondItem="8Zk-Xc-Bhr" secondAttribute="trailing" id="sut-nx-OWa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Zk-Xc-Bhr"/>
@@ -182,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.25" y="137.32394366197184"/>
+            <point key="canvasLocation" x="131.25" y="137.109375"/>
         </scene>
     </scenes>
 </document>
