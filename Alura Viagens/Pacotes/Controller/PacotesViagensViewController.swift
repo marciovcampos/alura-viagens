@@ -9,24 +9,36 @@
 import UIKit
 
 class PacotesViagensViewController: UIViewController, UICollectionViewDataSource {
+    
+     @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
+    
+    let listaViagens: Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         colecaoPacotesViagem.dataSource = self
-
-        // Do any additional setup after loading the view.
+        
     }
     
-    @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-           return 5
+        return self.listaViagens.count
        }
        
        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaPacote", for: indexPath) as! PacoteViagemCollectionViewCell
-        celulaPacote.backgroundColor = UIColor.blue
+        
+        let viagemAtual = listaViagens[indexPath.row]
+        
+        celulaPacote.labelTitulo.text = viagemAtual.titulo
+        celulaPacote.labelQuantidadeDias.text = "\(viagemAtual.quantidadeDeDias) dias"
+        celulaPacote.labelPreco.text = "R$ \(viagemAtual.preco)"
+        celulaPacote.imagemViagem.image = UIImage(named: viagemAtual.caminhoDaImagem)
+        
+        celulaPacote.layer.borderWidth = 0.5
+        celulaPacote.layer.borderColor = UIColor(displayP3Red: 85.0/255.00, green: 85.0/255.00, blue: 85.0/255.00, alpha: 1).cgColor
+        celulaPacote.layer.cornerRadius = 8
         return celulaPacote
+        
        }
 
 }
