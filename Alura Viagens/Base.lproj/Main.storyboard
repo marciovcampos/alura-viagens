@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SDg-24-Zwt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="10g-Jh-hFI">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,7 +8,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="oge-Qz-FYo">
+            <objects>
+                <tabBarController id="10g-Jh-hFI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cjR-cI-Bfu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="GSx-QT-kgZ"/>
+                        <segue destination="SDg-24-Zwt" kind="relationship" relationship="viewControllers" id="kmW-km-4fs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BX1-eY-4J7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="136"/>
+        </scene>
+        <!--procurar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alura_Viagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,7 +135,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zbg-zs-nSD">
-                                <rect key="frame" x="0.0" y="188" width="320" height="380"/>
+                                <rect key="frame" x="0.0" y="188" width="320" height="331"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="258" id="crI-g7-urp" customClass="TableViewCell" customModule="Alura_Viagens" customModuleProvider="target">
@@ -225,6 +243,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Zk-Xc-Bhr"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="procurar" id="TLh-1q-Mds"/>
                     <connections>
                         <outlet property="tabelaViagens" destination="Zbg-zs-nSD" id="2PE-Rq-no4"/>
                         <outlet property="viewHoteis" destination="xrS-t2-RXu" id="c3d-jp-aI3"/>
@@ -233,9 +252,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.25" y="137.109375"/>
+            <point key="canvasLocation" x="128" y="-199"/>
         </scene>
-        <!--Pacotes Viagens View Controller-->
+        <!--pacotes-->
         <scene sceneID="ikj-gs-dT6">
             <objects>
                 <viewController id="SDg-24-Zwt" customClass="PacotesViagensViewController" customModule="Alura_Viagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -244,7 +263,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ha7-FM-VhF">
-                                <rect key="frame" x="15" y="0.0" width="290" height="568"/>
+                                <rect key="frame" x="15" y="0.0" width="290" height="519"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-mG-sV7">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="30"/>
@@ -273,7 +292,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Rj-OV-Kid">
-                                        <rect key="frame" x="0.0" y="99" width="290" height="469"/>
+                                        <rect key="frame" x="0.0" y="99" width="290" height="420"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5c6-0z-O4x">
                                             <size key="itemSize" width="135" height="160"/>
@@ -342,13 +361,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pee-Yx-AYd"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="pacotes" id="hL7-jU-g4U"/>
                     <connections>
                         <outlet property="colecaoPacotesViagem" destination="4Rj-OV-Kid" id="Jmt-dN-8wK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZq-If-aOl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.5" y="136.26760563380282"/>
+            <point key="canvasLocation" x="128" y="479"/>
         </scene>
     </scenes>
 </document>
