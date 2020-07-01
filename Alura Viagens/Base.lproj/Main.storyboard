@@ -363,6 +363,7 @@
                     <tabBarItem key="tabBarItem" title="pacotes" id="hL7-jU-g4U"/>
                     <connections>
                         <outlet property="colecaoPacotesViagem" destination="4Rj-OV-Kid" id="Jmt-dN-8wK"/>
+                        <outlet property="labelContadorPacotes" destination="Spq-B9-ilz" id="149-ty-a5l"/>
                         <outlet property="pesquisarViagens" destination="BSQ-nr-O12" id="K03-Hv-FCe"/>
                     </connections>
                 </viewController>

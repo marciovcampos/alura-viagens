@@ -12,6 +12,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     
     @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
     @IBOutlet weak var pesquisarViagens: UISearchBar!
+    @IBOutlet weak var labelContadorPacotes: UILabel!
     
     let listaComTodasViagens: Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
     var listaViagens: Array<Viagem> = []
@@ -22,6 +23,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         colecaoPacotesViagem.dataSource = self
         colecaoPacotesViagem.delegate = self
         pesquisarViagens.delegate = self
+        self.labelContadorPacotes.text = self.atualizaContadorLabel()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -55,7 +57,14 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         if searchText != "" {
             listaViagens = listaViagens.filter { $0.titulo.contains(searchText) }
         }
+        self.labelContadorPacotes.text = self.atualizaContadorLabel()
         colecaoPacotesViagem.reloadData()
+        
+    }
+    
+    func atualizaContadorLabel() -> String {
+        return listaViagens.count == 1 ? "1 pacote encontrado": "\(listaViagens.count) pacotes encontrados"
     }
 
 }
+
