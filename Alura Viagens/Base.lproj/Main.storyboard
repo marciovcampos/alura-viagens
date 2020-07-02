@@ -391,7 +391,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzx-rB-xiC">
                                         <rect key="frame" x="0.0" y="500" width="320" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="finalizar compra"/>
                                     </button>
                                 </subviews>
                             </stackView>
