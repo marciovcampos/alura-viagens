@@ -25,6 +25,7 @@
 		808C7F0A24A6A555001E6F75 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C7F0924A6A555001E6F75 /* Viagem.swift */; };
 		808C7F0C24A6A6FE001E6F75 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C7F0B24A6A6FE001E6F75 /* ViagemDAO.swift */; };
 		80966AF024AE25070075A266 /* PacoteViagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80966AEF24AE25070075A266 /* PacoteViagem.swift */; };
+		80966AF224AE282B0075A266 /* PacoteViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80966AF124AE282B0075A266 /* PacoteViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		808C7F0924A6A555001E6F75 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
 		808C7F0B24A6A6FE001E6F75 /* ViagemDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
 		80966AEF24AE25070075A266 /* PacoteViagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagem.swift; sourceTree = "<group>"; };
+		80966AF124AE282B0075A266 /* PacoteViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacoteViagemDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		8076809A24AA5FF2009BC1CD /* ViagemDAO */ = {
 			isa = PBXGroup;
 			children = (
+				80966AF124AE282B0075A266 /* PacoteViagemDAO.swift */,
 				808C7F0B24A6A6FE001E6F75 /* ViagemDAO.swift */,
 			);
 			path = ViagemDAO;
@@ -286,6 +289,7 @@
 				80966AF024AE25070075A266 /* PacoteViagem.swift in Sources */,
 				8076808924AA28B1009BC1CD /* TableViewCell.swift in Sources */,
 				808C7EF524A632AD001E6F75 /* AppDelegate.swift in Sources */,
+				80966AF224AE282B0075A266 /* PacoteViagemDAO.swift in Sources */,
 				808C7EF724A632AD001E6F75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
