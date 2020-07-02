@@ -404,6 +404,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cLJ-bK-bea"/>
                     </view>
+                    <connections>
+                        <outlet property="imagemPacoteViagem" destination="2xd-sa-VLW" id="pbm-L1-2ZI"/>
+                        <outlet property="labelDataViagem" destination="vvp-rs-G3g" id="CLp-rn-OEX"/>
+                        <outlet property="labelDescricaoPacoteViagem" destination="zki-XQ-PgL" id="4Ei-0q-l2p"/>
+                        <outlet property="labelPrecoPacoteViagem" destination="E4D-2r-3iD" id="wEa-6j-cKM"/>
+                        <outlet property="labelTituloPacoteViagem" destination="gDk-PJ-qKy" id="p0l-ee-Ugy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79N-JK-126" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
