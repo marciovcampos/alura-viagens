@@ -25,6 +25,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.viewHoteis.layer.cornerRadius = 10
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barStyle = .black
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listaViagens.count
       }

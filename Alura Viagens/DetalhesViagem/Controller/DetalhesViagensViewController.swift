@@ -28,8 +28,11 @@ class DetalhesViagensViewController: UIViewController {
             self.labelDataViagem.text = pacote.dataViagem
             self.labelPrecoPacoteViagem.text = pacote.viagem.preco
         }
-
         
     }
+    
+    @IBAction func botaoVoltar(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+       }
 
 }
