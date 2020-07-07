@@ -432,22 +432,25 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="número do cartão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wDK-XD-3wM">
                                                 <rect key="frame" x="0.0" y="30" width="300" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome do cartão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5o6-JG-tQU">
                                                 <rect key="frame" x="0.0" y="69" width="300" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="data de validade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5A0-h1-69V">
                                                 <rect key="frame" x="0.0" y="108" width="300" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldEntrouFoco:" destination="caX-Rz-LQD" eventType="editingDidBegin" id="BNC-PU-99C"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="je3-Rj-N4g">
                                                 <rect key="frame" x="0.0" y="147" width="300" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzx-rB-xiC">
                                                 <rect key="frame" x="0.0" y="186" width="300" height="30"/>
@@ -487,6 +490,7 @@
                         <outlet property="labelDescricaoPacoteViagem" destination="zki-XQ-PgL" id="4Ei-0q-l2p"/>
                         <outlet property="labelPrecoPacoteViagem" destination="E4D-2r-3iD" id="wEa-6j-cKM"/>
                         <outlet property="labelTituloPacoteViagem" destination="gDk-PJ-qKy" id="p0l-ee-Ugy"/>
+                        <outlet property="textFieldData" destination="5A0-h1-69V" id="ANV-Jq-JSv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79N-JK-126" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
