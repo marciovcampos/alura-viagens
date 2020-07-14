@@ -38,6 +38,7 @@
 		80966B3624AE2B910075A266 /* img11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80966B2524AE2B910075A266 /* img11.jpg */; };
 		80966B3724AE2B910075A266 /* img10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80966B2624AE2B910075A266 /* img10.jpg */; };
 		80966B3824AE2B910075A266 /* icon_hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 80966B2724AE2B910075A266 /* icon_hotel.png */; };
+		80A5832224BE035800BA24C3 /* ConfirmacaoPagamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5832124BE035800BA24C3 /* ConfirmacaoPagamentoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		80966B2524AE2B910075A266 /* img11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img11.jpg; sourceTree = "<group>"; };
 		80966B2624AE2B910075A266 /* img10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img10.jpg; sourceTree = "<group>"; };
 		80966B2724AE2B910075A266 /* icon_hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hotel.png; sourceTree = "<group>"; };
+		80A5832124BE035800BA24C3 /* ConfirmacaoPagamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmacaoPagamentoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				8076809724AA5F93009BC1CD /* Home */,
 				8008914B24AB7CA300F09C41 /* Pacotes */,
 				808C7A0224ACE37D00565D49 /* DetalhesViagem */,
+				80A5831F24BE02FA00BA24C3 /* ConfirmacaoPagamento */,
 				8076809A24AA5FF2009BC1CD /* ViagemDAO */,
 				80966B1624AE2B910075A266 /* Assets */,
 				808C7EF624A632AD001E6F75 /* SceneDelegate.swift */,
@@ -239,6 +242,22 @@
 			);
 			name = Assets;
 			path = "../../../../../Downloads/arquivos-externos 2/Assets";
+			sourceTree = "<group>";
+		};
+		80A5831F24BE02FA00BA24C3 /* ConfirmacaoPagamento */ = {
+			isa = PBXGroup;
+			children = (
+				80A5832024BE031E00BA24C3 /* Controller */,
+			);
+			path = ConfirmacaoPagamento;
+			sourceTree = "<group>";
+		};
+		80A5832024BE031E00BA24C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80A5832124BE035800BA24C3 /* ConfirmacaoPagamentoViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +352,7 @@
 				808C7F0A24A6A555001E6F75 /* Viagem.swift in Sources */,
 				808C7F0C24A6A6FE001E6F75 /* ViagemDAO.swift in Sources */,
 				808C7A0624ACE3E100565D49 /* DetalhesViagensViewController.swift in Sources */,
+				80A5832224BE035800BA24C3 /* ConfirmacaoPagamentoViewController.swift in Sources */,
 				8008915124AB7E6100F09C41 /* PacoteViagemCollectionViewCell.swift in Sources */,
 				808C7EF924A632AD001E6F75 /* ViewController.swift in Sources */,
 				80966AF024AE25070075A266 /* PacoteViagem.swift in Sources */,
