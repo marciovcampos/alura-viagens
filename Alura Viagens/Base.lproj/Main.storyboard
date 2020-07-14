@@ -13,6 +13,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="soM-NQ-GxC" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="57W-QW-CSN">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

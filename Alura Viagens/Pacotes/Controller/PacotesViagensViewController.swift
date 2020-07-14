@@ -14,8 +14,6 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     @IBOutlet weak var pesquisarViagens: UISearchBar!
     @IBOutlet weak var labelContadorPacotes: UILabel!
     
-    
-    
     let listaComTodasViagens: Array<PacoteViagem> = PacoteViagemDAO().retornaTodasAsViagens()
     var listaViagens: Array<PacoteViagem> = []
     
@@ -37,14 +35,8 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         
         let pacoteAtual = listaViagens[indexPath.row]
         
-        celulaPacote.labelTitulo.text = pacoteAtual.viagem.titulo
-        celulaPacote.labelQuantidadeDias.text = "\(pacoteAtual.viagem.quantidadeDeDias) dias"
-        celulaPacote.labelPreco.text = "R$ \(pacoteAtual.viagem.preco)"
-        celulaPacote.imagemViagem.image = UIImage(named: pacoteAtual.viagem.caminhoDaImagem)
+        celulaPacote.configuraCelula(pacoteViagem: pacoteAtual)
         
-        celulaPacote.layer.borderWidth = 0.5
-        celulaPacote.layer.borderColor = UIColor(displayP3Red: 85.0/255.00, green: 85.0/255.00, blue: 85.0/255.00, alpha: 1).cgColor
-        celulaPacote.layer.cornerRadius = 8
         return celulaPacote
         
        }
