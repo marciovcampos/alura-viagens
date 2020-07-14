@@ -24,10 +24,16 @@ class ConfirmacaoPagamentoViewController: UIViewController {
         super.viewDidLoad()
         
         if let pacote = pacoteComprado {
-            print(pacote.viagem.titulo)
+            self.imagemPacoteViagem.image = UIImage(named: pacote.viagem.caminhoDaImagem)
+            self.labelTituloPacoteViagem.text = pacote.viagem.titulo.uppercased()
+            self.labelHotelPacoteViagem.text = pacote.nomeDoHotel
+            self.labelDataPacoteViagem.text = pacote.dataViagem
+            self.labelDescricaoPacoteViagem.text = pacote.descricao
+            
+            self.imagemPacoteViagem.layer.cornerRadius = 10
+            self.imagemPacoteViagem.layer.masksToBounds = true
+            
         }
-
-        // Do any additional setup after loading the view.
     }
     
 }
