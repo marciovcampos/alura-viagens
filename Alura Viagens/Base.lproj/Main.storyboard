@@ -260,7 +260,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Zk-Xc-Bhr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="procurar" id="TLh-1q-Mds"/>
+                    <tabBarItem key="tabBarItem" title="procurar" image="icon_search.png" id="TLh-1q-Mds"/>
                     <connections>
                         <outlet property="tabelaViagens" destination="Zbg-zs-nSD" id="2PE-Rq-no4"/>
                         <outlet property="viewHoteis" destination="xrS-t2-RXu" id="c3d-jp-aI3"/>
@@ -695,7 +695,7 @@
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BSQ-nr-O12">
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="BSQ-nr-O12">
                                         <rect key="frame" x="0.0" y="33" width="345" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="B4i-X4-PKI"/>
@@ -781,7 +781,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pee-Yx-AYd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="pacotes" id="hL7-jU-g4U"/>
+                    <tabBarItem key="tabBarItem" title="pacotes" image="icon_package.png" id="hL7-jU-g4U"/>
                     <connections>
                         <outlet property="colecaoPacotesViagem" destination="4Rj-OV-Kid" id="Jmt-dN-8wK"/>
                         <outlet property="labelContadorPacotes" destination="Spq-B9-ilz" id="149-ty-a5l"/>
@@ -798,5 +798,7 @@
         <image name="icon_back.png" width="50" height="50"/>
         <image name="icon_breakfast.png" width="50" height="50"/>
         <image name="icon_hotel.png" width="50" height="50"/>
+        <image name="icon_package.png" width="25" height="25"/>
+        <image name="icon_search.png" width="25" height="25"/>
     </resources>
 </document>
