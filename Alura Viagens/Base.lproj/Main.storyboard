@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="10g-Jh-hFI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="soM-NQ-GxC">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,10 +8,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zAm-dJ-N8d">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="soM-NQ-GxC" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="57W-QW-CSN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="10g-Jh-hFI" kind="relationship" relationship="rootViewController" id="ZLD-gu-F90"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBu-kx-8T0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1646" y="135"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oge-Qz-FYo">
             <objects>
                 <tabBarController id="10g-Jh-hFI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LNq-BL-9fO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cjR-cI-Bfu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -615,18 +632,18 @@
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2z-bl-tU8" customClass="Con">
-                                        <rect key="frame" x="0.0" y="320" width="355" height="35"/>
-                                        <color key="backgroundColor" red="0.2196078431372549" green="0.71372549019607845" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="mkF-D2-WGZ"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqf-yu-3bd" userLabel="voltar para home">
+                                        <rect key="frame" x="0.0" y="320" width="355" height="70"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.71372549019999998" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="voltar para a home">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="botaoVoltarHome:" destination="M4k-eG-g6b" eventType="touchUpInside" id="Dbv-TJ-wN1"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68x-Bh-bDG">
-                                        <rect key="frame" x="0.0" y="360" width="355" height="199"/>
+                                        <rect key="frame" x="0.0" y="395" width="355" height="164"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
@@ -645,6 +662,7 @@
                         <viewLayoutGuide key="safeArea" id="QRw-07-iZb"/>
                     </view>
                     <connections>
+                        <outlet property="botaoVoltarHome" destination="Oqf-yu-3bd" id="j30-z6-KxS"/>
                         <outlet property="imagemPacoteViagem" destination="sow-cY-1Pa" id="iH0-Td-ogO"/>
                         <outlet property="labelDataPacoteViagem" destination="cFN-Ib-MHE" id="3hE-sK-cfT"/>
                         <outlet property="labelDescricaoPacoteViagem" destination="Coy-jG-lig" id="AzA-CA-9vs"/>

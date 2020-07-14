@@ -17,6 +17,7 @@ class ConfirmacaoPagamentoViewController: UIViewController {
     @IBOutlet weak var labelDataPacoteViagem: UILabel!
     @IBOutlet weak var labelQuantidadePessoas: UILabel!
     @IBOutlet weak var labelDescricaoPacoteViagem: UILabel!
+    @IBOutlet weak var botaoVoltarHome: UIButton!
     
     var pacoteComprado: PacoteViagem? = nil
 
@@ -33,7 +34,16 @@ class ConfirmacaoPagamentoViewController: UIViewController {
             self.imagemPacoteViagem.layer.cornerRadius = 10
             self.imagemPacoteViagem.layer.masksToBounds = true
             
+            self.botaoVoltarHome.layer.cornerRadius = 8
+            
         }
+    }
+    
+    @IBAction func botaoVoltarHome(_ sender: Any) {
+        if let navigation = self.navigationController {
+            navigation.popToRootViewController(animated: true)
+        }
+        
     }
     
 }
